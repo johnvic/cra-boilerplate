@@ -1,0 +1,42 @@
+@import '~antd/dist/antd.less';
+
+@margin-auto: 0 auto;
+//Sidebar
+.main-sidebar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.user-info {
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}
+.user-info .username {
+  color: @white;
+}
+.main-sidebar.ant-layout-sider-collapsed .user-info .username {
+  display: none;
+}
+.sidebar-toggle {
+  font-size: 20px;
+  padding: 8px;
+  color: @white;
+  width: 100%;
+}
+.sidebar-avatar {
+  margin: @margin-auto;
+}
+.sidebar-toggle:hover {
+  color: @link-hover-color;
+}
+.fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 2px 0 8px 0 rgba(29,35,41,.05);
+}
+.layout-has-fixed-sidebar {
+  padding-left: 200px;
+}
