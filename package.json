@@ -9,6 +9,7 @@
     "antd": "^4.0.0",
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^0.9.1",
+    "flow-bin": "^0.119.1",
     "husky": "^4.2.3",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
@@ -29,7 +30,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "flow": "flow"
   },
   "eslintConfig": {
     "extends": "react-app"
