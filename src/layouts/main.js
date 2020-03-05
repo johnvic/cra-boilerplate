@@ -25,17 +25,19 @@ const MainLayout = () => {
         collapsed={collapsed}
         className="main-sidebar fixed-sidebar"
       >
-        {collapsed ? (
-          <MenuUnfoldOutlined
-            className="sidebar-toggle"
-            onClick={() => toggleSideBar()}
-          />
-        ) : (
-          <MenuFoldOutlined
-            className="sidebar-toggle"
-            onClick={() => toggleSideBar()}
-          />
-        )}
+        <div className="sidebar-toggle-cont">
+          {collapsed ? (
+            <MenuUnfoldOutlined
+              className="sidebar-toggle"
+              onClick={() => toggleSideBar()}
+            />
+          ) : (
+            <MenuFoldOutlined
+              className="sidebar-toggle"
+              onClick={() => toggleSideBar()}
+            />
+          )}
+        </div>
         <div className="user-info">
           <Avatar className="sidebar-avatar" size="large">
             JV
@@ -58,16 +60,12 @@ const MainLayout = () => {
         </Menu>
         <div className="logo" />
       </Sider>
-      <Layout className="layout-has-fixed-sidebar">
-        <Header style={{ padding: 0, background: "#fff" }}></Header>
-        <Content style={{ margin: "24px 16px 0" }}>
-          <div
-            className="site-layout-background"
-            style={{ padding: 24, minHeight: 800 }}
-          >
-            content
-          </div>
-        </Content>
+      <Layout
+        className={`layout-has-fixed-sidebar ${
+          collapsed ? "sidebar-collapsed" : ""
+        }`}
+      >
+        <Content className="main-content">Content</Content>
         <Footer style={{ textAlign: "center" }}>
           Ant Design ©2018 Created by Ant UED
         </Footer>

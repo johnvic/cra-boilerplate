@@ -18,11 +18,13 @@
 .main-sidebar.ant-layout-sider-collapsed .user-info .username {
   display: none;
 }
+.sidebar-toggle-cont {
+  text-align: center;
+}
 .sidebar-toggle {
   font-size: 20px;
   padding: 8px;
   color: @white;
-  width: 100%;
 }
 .sidebar-avatar {
   margin: @margin-auto;
@@ -39,5 +41,14 @@
   box-shadow: 2px 0 8px 0 rgba(29,35,41,.05);
 }
 .layout-has-fixed-sidebar {
-  padding-left: 200px;
+  margin-left: 200px;
+  height: 100vh;
+}
+.layout-has-fixed-sidebar.sidebar-collapsed {
+  margin-left: 80px;
+}
+.main-content {
+  background: @white;
+  margin: 15px;
+  padding: @padding-md;
 }
