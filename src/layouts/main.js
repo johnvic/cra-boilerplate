@@ -10,7 +10,7 @@ import {
 import "./main.less";
 
 const MainLayout = () => {
-  const { Header, Sider, Content, Footer } = Layout;
+  const { Sider, Content, Footer } = Layout;
   const [collapsed, setCollapsed] = useState(false);
 
   const toggleSideBar = () => {
